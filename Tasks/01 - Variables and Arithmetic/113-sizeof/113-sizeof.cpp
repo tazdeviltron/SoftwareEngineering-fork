@@ -27,5 +27,5 @@ int main()
 	//TASK: Display the size of ALL the integer data types
 	// Write your solution below here. The first one is done for you.
 	printf("char\t\t%llu\n", sizeof(char));	//sizeof() returns a value of type unsigned long long
-
+	printf("The size of variable sillyBigPositiveValue is %llu\n", sizeof(sillyBigPositiveValue));
 }
