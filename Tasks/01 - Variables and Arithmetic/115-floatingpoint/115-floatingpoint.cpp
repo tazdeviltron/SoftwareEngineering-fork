@@ -33,7 +33,7 @@ int main()
     printf("x = %f\n", x);
 
     //Divide
-    x = x / 0.0;      //Error!!!!????
+    x = x / 1.0;      //Error!!!!????
     printf("x = %f\n", x);
 
 }
