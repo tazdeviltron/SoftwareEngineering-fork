@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+//This is the main task
 int main()
 {
     int i = 0;
