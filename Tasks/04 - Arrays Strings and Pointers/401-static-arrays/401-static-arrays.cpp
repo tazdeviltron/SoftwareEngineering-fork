@@ -44,14 +44,27 @@ int main()
 
     //Write task 1 solution here
     int64_t sum = 0L;   //Result needs to be bigger than int to avoid overflow
+    for (unsigned int n = 0; n < N; n++) {
+        sum += (long)nums[n];
+    }
+    cout << "Sum = " << sum << endl;
 
+    cout << sizeof(int64_t) << "**" << endl;
 
     // ***********************************************************************************************************************
     // TASK 2 - calculate the mean of all elements (this will be a fractional value) and display to 1 decimal place accuracy *
     // ***********************************************************************************************************************
 
     //Write task 2 solution here
+    float mean = (float)sum / (float)N;
 
+
+    //Write to display - C version
+    printf("Mean = %.1f\n", mean);
+
+    //C++ version - arguably more complex
+    cout.precision(1);
+    cout << "Mean = " << std::fixed << mean;
 }
 
 
